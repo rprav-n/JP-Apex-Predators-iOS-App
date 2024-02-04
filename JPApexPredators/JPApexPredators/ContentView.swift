@@ -24,9 +24,7 @@ struct ContentView: View {
         NavigationStack {
             List(filteredDinos) { predator in
                 NavigationLink {
-                    Image(predator.image)
-                        .resizable()
-                        .scaledToFit()
+                    PredatorDetail(predator: predator)
                 } label: {
                     HStack {
                         // Dinosaur image
@@ -85,7 +83,6 @@ struct ContentView: View {
                 }
             }
             .animation(.default, value: currentSelection)
-            .foregroundStyle(.white)
         }
         .preferredColorScheme(.dark)
     }

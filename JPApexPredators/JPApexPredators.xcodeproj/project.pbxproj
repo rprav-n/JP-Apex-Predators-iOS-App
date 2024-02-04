@@ -14,6 +14,7 @@
 		ACA782AB2B6FC16A003B19E7 /* jpapexpredators.json in Resources */ = {isa = PBXBuildFile; fileRef = ACA782AA2B6FC16A003B19E7 /* jpapexpredators.json */; };
 		ACA782AE2B6FC388003B19E7 /* ApexPredator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA782AD2B6FC388003B19E7 /* ApexPredator.swift */; };
 		ACA782B02B6FC76A003B19E7 /* Predators.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA782AF2B6FC76A003B19E7 /* Predators.swift */; };
+		ACA782B22B6FF7E2003B19E7 /* PredatorDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA782B12B6FF7E2003B19E7 /* PredatorDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		ACA782AA2B6FC16A003B19E7 /* jpapexpredators.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jpapexpredators.json; sourceTree = "<group>"; };
 		ACA782AD2B6FC388003B19E7 /* ApexPredator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexPredator.swift; sourceTree = "<group>"; };
 		ACA782AF2B6FC76A003B19E7 /* Predators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predators.swift; sourceTree = "<group>"; };
+		ACA782B12B6FF7E2003B19E7 /* PredatorDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,7 @@
 				ACA782AC2B6FC376003B19E7 /* Model */,
 				ACA7829C2B6FC0D4003B19E7 /* JPApexPredatorsApp.swift */,
 				ACA7829E2B6FC0D4003B19E7 /* ContentView.swift */,
-				ACA782AF2B6FC76A003B19E7 /* Predators.swift */,
+				ACA782B12B6FF7E2003B19E7 /* PredatorDetail.swift */,
 				ACA782AA2B6FC16A003B19E7 /* jpapexpredators.json */,
 				ACA782A02B6FC0D5003B19E7 /* Assets.xcassets */,
 				ACA782A22B6FC0D5003B19E7 /* Preview Content */,
@@ -79,6 +81,7 @@
 		ACA782AC2B6FC376003B19E7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ACA782AF2B6FC76A003B19E7 /* Predators.swift */,
 				ACA782AD2B6FC388003B19E7 /* ApexPredator.swift */,
 			);
 			path = Model;
@@ -157,6 +160,7 @@
 			files = (
 				ACA782AE2B6FC388003B19E7 /* ApexPredator.swift in Sources */,
 				ACA7829F2B6FC0D4003B19E7 /* ContentView.swift in Sources */,
+				ACA782B22B6FF7E2003B19E7 /* PredatorDetail.swift in Sources */,
 				ACA782B02B6FC76A003B19E7 /* Predators.swift in Sources */,
 				ACA7829D2B6FC0D4003B19E7 /* JPApexPredatorsApp.swift in Sources */,
 			);
