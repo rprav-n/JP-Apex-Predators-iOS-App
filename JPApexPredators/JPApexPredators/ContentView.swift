@@ -8,17 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var searchText = ""
+    @State var alphabetical = false
     
     let predators = Predators()
-    @State var searchText = ""
     
     var filteredDinos: [ApexPredator] {
-        if searchText.isEmpty {
-            return predators.apexPredators
-        }
-        return predators.apexPredators.filter { predator in
-            predator.name.localizedCaseInsensitiveContains(searchText)
-        }
+        predators.sort(by: alphabetical)
+        return predators.search(for: searchText)
     }
     
     var body: some View {
@@ -58,6 +55,19 @@ struct ContentView: View {
             .searchable(text: $searchText)
             .autocorrectionDisabled()
             .animation(.default, value: searchText)
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button(action: {
+                        withAnimation {
+                            alphabetical.toggle()
+                        }
+                    }, label: {
+                        Image(systemName: alphabetical ? "film" :"textformat.size")
+                            .foregroundStyle(.white)
+                            .symbolEffect(.bounce, value: alphabetical)
+                    })
+                }
+            }
         }
         .preferredColorScheme(.dark)
     }
